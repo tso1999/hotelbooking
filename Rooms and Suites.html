@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title> Elite Maple: Room & Suites </title>
+		<style>
+		body {background-color: black ;}
+
+
+	.bar1{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  border: 3px solid black;
+	  background-color: #858483;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+	  background-color: #D97113;
+
+	}
+
+	.active {
+	  background-color:white;
+
+	}
+	.bar {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+
+
+	border-bottom-style: solid;
+	  overflow: hidden;
+	  background-color: #858483;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+	  background-color: #D97113;
+	}
+
+	.active {
+	  background-color:#858483;
+	}
+
+	div.pic:hover img
+{
+	opacity: 1.0;
+	transform: scale(1.05);
+	box-shadow: 5px 5px 5px gray;
+}
+
+#sag {
+  background-color: #D4af37;
+   text-align: center;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 3px solid white;
+}
+#sse {
+  background-color: black;
+   text-align: center;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 3px solid white;
+}
+
+.float-childL {
+    width: 50%;
+    float: left;
+    padding: 20px;
+
+
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 20px;
+  display: none;
+}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="ScriptRoom.js"> </script>
+
+	</head>
+
+	<body>
+
+
+
+		<ul class="bar1">
+
+ <li><a href="About Us.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li style="float:right"><a href="sign.html">Sign Up/Log In</a></li>
+  <li style="float:right">Current Date</a></li>
+
+
+</ul>
+
+<ul class="bar">
+
+  <li><a class="active" href="homepage.html"><img src="logo.jpg" height="50" > </a></li>
+  <li style="float:right"><a href="book.html"> Book</a></li>
+  <li style="float: right"><a href="news events.html">News</a></li>
+   <li style="float: right"><a href="Dine and drink.html">Dine/Drink</a></li>
+   <li style="float: right"><a href="Spa and Gym.html">Spa & Gym</a></li>
+	<li style="float: right"><a href="Rooms and suites.html">Room Gallery</a></li>
+  <li style="float: right"><a href="price.html">Room/Price</a></li>
+
+
+</ul>
+
+		<main>
+		<div id="sag">
+		<h1> Single Rooms </h1>
+		<div class="float-childL">
+		<div class="pic">
+			<img src="Standard.jpg" alt="#" width="420" height="auto">
+			<h3>Standard</h3>
+			<p> 419 sqft </p>
+			<p> Daily Room Service </p>
+			<p> 1 Bathroom and Shower </p>
+			<button onclick="myFunction()"> Book Now </button>
+
+		</div>
+		</div>
+		<div class="pic">
+			<img src="Luxury.jpg" alt="#" width="450" height="auto">
+			<h3>Luxury </h3>
+			<p> 519 sqft </p>
+			<p> Daily Room Service </p>
+			<p> 1 Bathroom and Shower </p>
+			<button onclick="myFunction()"> Book Now </button>
+			<br />
+		</div>
+		</div>
+		<div id="sse">
+		<h1> Suites </h1>
+		<div class="pic">
+		<div class="float-childL">
+			<img src="Standard Suite.jpg" alt="#" width="450" height="auto">
+			<h3>Standard Suite </h3>
+			<p> 1356 sqft </p>
+			<p> Daily Room Service </p>
+			<p> 2 Bathrooms, Showers, and Bath </p>
+			<button onclick="myFunction()"> Book Now </button>
+			<br />
+		</div>
+		</div>
+		<div class="pic">
+			<img src="Luxury Suite.jpg" alt="#" width="450" height="auto">
+			<h3>Luxury Suite </h3>
+			<p> 2465 sqft </p>
+			<p> Daily Room Service </p>
+			<p> 2 Bathrooms, Showers, and Bath </p>
+			<button onclick="myFunction()"> Book Now </button>
+
+		</div>
+		</div>
+		<div id="sag">
+		<div class="pic">
+			<img src="Penthouse Suite.jpg" alt="#" width="450" height="auto">
+			<h3>Penthouse Suite</h3>
+			<div id="flip">Click for more details.</div>
+			<div id="panel">
+			<p> 5100 sqft </p>
+			<p> Daily Room Service </p>
+			<p> 3 Bathrooms, Showers, and Bath </p>
+			<p> In-room Massage Table </p>
+			</div>
+			</div>
+			<button onclick="myFunction()"> Book Now </button>
+
+		</div>
+		</div>
+	</main>
+
+
+	</body>
+	</html>

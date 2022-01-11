@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+   <title> Assignment 3: Events Venues & Plans At Elite Maple Hotel </title>
+   <link rel="stylesheet" href="styles.css">
+   <style >
+     body {
+  background-color: #D4af37;
+  }
+    .bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+  }
+
+li {
+  float: left;
+  }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+li a:hover:not(.active) {
+  background-color: orange;
+  }
+
+.active {
+  background-color:grey;
+  }
+    .heading{
+      color: black;
+      text-align: justify;
+    }
+    .heading::first-letter{
+      font-size: 150%;
+    }
+    h1,h2{
+      font-family: "Times New Roman";
+    }
+    #title{
+      background: orange;
+  background:-webkit-linear-gradient(orange, yellow); /*Chrome, Safari*/
+  background: -o-linear-gradient(orange, yellow); /*Opera*/
+  background: -moz-linear-gradient(orange, yellow); /*Mozilla Firefox*/
+  background: linear-gradient (orange, yellow);
+    }
+    #b1{background-color:rgba(255,255,0,0.3);}
+
+ </style>
+
+
+ </head>
+
+<body>
+  <ul class="bar">
+    <li><a class="active" href="homepage.html"><img src="logo.jpg" height="50" > </a></li>
+   <li style="float:right"><a href="book.html"> Book</a></li>
+   <li style="float: right"><a href="Dine and Drink.html">Dine/Drink</a></li>
+    <li style="float: right"><a href="price.html">Room Price</a></li>
+   <li style="float: right"><a href="homepage.html">Home</a></li>
+  </ul>
+    <div class="heading"> </div>
+    <h1 class= "heading"> Welcome to Elite Maple Hotel! </h1>
+    <h2> - Get to know multiple venues </h2>
+    <i class='fas fa-wine-glass-alt' style='font-size:36px'></i>
+
+	<table border="1" style="width:100%">
+
+
+		<tr>
+            <th colspan="7" id="title"> Events Venues & Plans At Elite Maple Hotel </th>
+        </tr>
+
+        <tr>
+            <td> Refine </td>
+            <td colspan="4">
+               <input type="range" min="1" max="100" id="my range" /> Approximate capacity of members from 1 - 100
+            </td>
+
+            <td colspan="2">
+              <button type="button" onclick="alert('Thank you for the application')">
+                   Apply to plan
+              </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="7"> <br /> </td>
+        </tr>
+
+        <tr>
+            <td>
+              Swimming pool venue <br/>
+                <img src="swimming pool venue.jpg" alt="swimming pool venue" width="250" height="100"> </img>
+            </td>
+            <td colspan="2">
+              Garden venue <br/>
+                <img src="garden venue.jpg" alt="garden venue" width="250" height="100"> </img>
+            </td>
+            <td colspan="2">
+              Meeting room venue <br/>
+                <img src="meeting room.jpg" alt="meeting room venue" width="250" height="100"> </img>
+            </td>
+            <td colspan="2">
+                <p> short introduce about venues </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+
+              <ul>
+                 <li>Juice</li> </br>
+                <li>Alcoholic drinks</li> </br>
+
+                  <ul>
+                      <li>Whiskey</li> </br>
+                      <li>Red wine</li> </br>
+                      <li>Champagne</li> </br>
+                      <li>Rum</li> </br>
+               </ul>
+                </li>
+                <li>Food
+                  <ul>
+                    <li>Icecream</li> </br>
+                    <li>Steak</li> </br>
+                    <li>Hamburger</li>
+                  </ul>
+                </li>
+             </ul>
+            </td>
+
+            <td colspan="2" rowspan="4">
+            <ul>
+                <li>Flowers </li></br>
+                  <ul>
+                      <li>Daisies</li> </br>
+                      <li>Gardenias</li> </br>
+                      <li>Lilies</li> </br>
+                      <li>Roses</li> </br>
+                  </ul>
+                </li>
+                <li>Food
+                  <ul>
+                    <li>Icecream</li> </br>
+                    <li>Steak</li> </br>
+                    <li>Hamburger</li> </br>
+                  </ul>
+                </li>
+            </ul>
+            </td>
+
+            <td colspan="2" rowspan="4">
+                <ul>
+                <li>Board</li> </br>
+                  <ul>
+                      <li>Whiteboard</li> </br>
+                      <li>Blackboard</li> </br>
+                  </ul> </br>
+                </li>
+                <li>Food
+                  <ul>
+                    <li>Steak</li> </br>
+                    <li>Salad</li> </br>
+                    <li>Hamburger</li>
+                  </ul>
+                </li>
+            </ul>
+
+
+
+            </td>
+            <td colspan="2" rowspan="4">
+
+              <button type="button" onclick="alert('Your discount code is 12345')" id="b1">
+                 Get a discount!
+              </button>
+
+            </td>
+        </tr>
+
+
+    </table>
+
+ </body>
+
+</html>

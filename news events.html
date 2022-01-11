@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+   <title> Assignment 3: News and Events At Elite Maple Hotel </title>
+   <link rel="stylesheet" href="styles.css">
+  <style>
+     body {
+  background-color: #D4af37;
+  }
+    .bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+  }
+
+li {
+  float: left;
+  }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+li a:hover:not(.active) {
+  background-color: orange;
+  }
+
+
+.active {
+  background-color:grey;
+  }
+
+.heading {
+  color:black;
+  text-align:justify;
+}
+.heading::first-letter{
+  font-size:150%;
+}
+#title {
+	background: orange;
+	background:-webkit-linear-gradient(orange, yellow); /*Chrome, Safari*/
+	background: -o-linear-gradient(orange, yellow); /*Opera*/
+	background: -moz-linear-gradient(orange, yellow); /*Mozilla Firefox*/
+	background: linear-gradient (orange, yellow);
+}
+/*unvisted link*/
+a:link{
+  color: white;
+}
+/*visted link*/
+a:visited{
+  color: white
+}
+/*mouse over link*/
+a:hover{
+  color:black
+}
+h1,h2{
+      font-family: "Times New Roman";
+    }
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 0px4;
+}
+ </style>
+ </head>
+
+<body>
+  <ul class="bar">
+    <li><a class="active" href="homepage.html"><img src="logo.jpg" height="50" > </a></li>
+   <li style="float:right"><a href="book.html"> Book</a></li>
+   <li style="float: right"><a href="Dine and drink.html">Dine/Drink</a></li>
+    <li style="float: right"><a href="price.html">Room Price</a></li>
+   <li style="float: right"><a href="homepage.html">Home</a></li>
+   <li style="float: right"><a href="wedding party.html">wedding Party</a></li>
+   <li style="float: right"><a href="birthday event.html">Birthday Event</a></li>
+   <li style="float: right"><a href="event venues.html">Event Venues</a></li>
+  </ul>
+
+	<div class="heading"> </div>
+    <h1 class= "heading"> Welcome to Elite Maple Hotel! </h1>
+    <h2> - News and Events Section </h2>
+
+	<table border="1" style="width:100%">
+
+		<tr>
+			<th colspan="7" id="title" > News and Events At Elite Maple Hotel </th>
+		</tr>
+
+        <tr>
+            <td colspan="7">
+              <form>
+              <input type="text" name="search" placeholder="Search recent news..">
+              </form><br/>
+           </td>
+        </tr>
+
+        <tr>
+        	<td> Recent News </td>
+        	<td colspan="2">
+                <iframe src="demo_iframe.htm" name="youtube"></iframe>
+                <p> <a href="https://www.youtube.com/watch?v=WHoPGW3xeTY" target="inframe_youtube"> New COVID-19 cases surge in Canada </a> </p>
+                 <td colspan="4">
+        	<p> paragraph about news </p>
+        	</td>
+        </tr>
+
+        <tr>
+            <td>
+        	<a href="birthday event.html">Birthday Event</a>
+            </a>
+            </td>
+        	<td colspan="2">
+              <img src="birthday event.jpg" alt="have a nice memory!" width="250" height="200"></img>
+            </td>
+
+            <td colspan="4">
+        		<p> paragraph about birthday events </p>
+            </td>
+        </tr>
+
+        <tr>
+        	<td>
+                <a href="wedding party.html">Wedding Party</a>
+            </td>
+
+        	<td colspan="2">
+             <img src="wedding party.jpg" alt="have a nice memory!" width="250" height="200"> </img>
+
+            </td>
+        	<td colspan="4">
+                <p> paragraph about wedding events </p>
+            </td>
+        </tr>
+
+    </table>
+
+  </body>
+
+</html>

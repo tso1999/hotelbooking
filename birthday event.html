@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+   <title> Assignment 3: Birthday Event At Eliet Maple Hotel </title>
+   <style>
+ body {
+  background-color: #D4af37;
+  }
+ .bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: orange;
+}
+
+.active {
+  background-color:grey;
+}
+    .heading {
+     color:black;
+     text-align:justify;
+    }
+    .heading::first-letter{
+  font-size:150%;
+    }
+    #title {
+    background: orange;
+    background:-webkit-linear-gradient(orange, yellow); /*Chrome, Safari*/
+    background: -o-linear-gradient(orange, yellow); /*Opera*/
+    background: -moz-linear-gradient(orange, yellow); /*Mozilla Firefox*/
+    background: linear-gradient (orange, yellow);
+    }
+
+     h1,h2{
+      font-family: "Times New Roman";
+    }
+    img {
+    float: right;
+    margin: 0 0 10px 10px;
+     opacity: 1.0;
+    }
+    ul.b {
+  list-style-type: square;
+   }
+   div p {
+  background-color:orange;
+  }
+  div {
+  width: 200px;
+  height:100px;
+  background-color: orange;
+  border: 2px dotted black;
+  border-radius: 10px;
+ }
+
+   </style>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <ul class="bar">
+      <li><a class="active" href="homepage.html"><img src="logo.jpg" height="50" > </a></li>
+     <li style="float:right"><a href="book.html"> Book</a></li>
+     <li style="float: right"><a href="Dine and Drink.html">Dine/Drink</a></li>
+      <li style="float: right"><a href="price.html">Room Price</a></li>
+     <li style="float: right"><a href="homepage.html">Home</a></li>
+   </ul>
+
+    <h1 class="heading"> Welcome to Elite Maple Hotel! </h1>
+    <h2> - Have a nice memory during birthdays!</h2>
+
+
+        <table border="1" style="width:100%">
+
+        <tr>
+			<th colspan="6" id="title"> Birthday Event At Eliet Maple Hotel </th>
+			<td colspan="1">
+                <button type="button" onclick="alert('Thank you for the reservation')">
+                   Make a reservation
+                </button>
+
+            </td>
+		</tr>
+
+		<tr>
+			<td colspan="7"> <br/> </td>
+		</tr>
+
+		<tr>
+        	<td rowspan="2">
+             <img src="birthday cake.jpg" alt="Have a nice memory" width="250" height="100"> </img>
+             <br/>
+             <audio controls>
+             <source src="happy birthday.ogg" type="audio/ogg">
+             <source src="happy birthday.mp3" type="audio/mpeg">
+             </audio>
+            </td>
+
+        	<td colspan="7">
+        		<p> paragraph to introduce,paragraph to introduce, paragraph to introduce, have a nice time, paragraph to introduce, hope you like it, have a super nice day dear customers,paragraph to introduce,have a super nice day dear customers, have a super nice day dear customers, have a super nice day dear customers, have a super nice day dear customers, have a super nice day dear customers.
+                </p>
+                <img src="happybirthday.jpg" alt="Have a nice memory" width="250" height="100"> </img>
+        	</td>
+        <tr>
+        	<td colspan="2">
+                What you can do to enjoy: <br/>
+                <ul class="b">
+                    <li>Make your own's birthday cake</li> </br>
+                    <li>Take amazing photos</li> </br>
+                    <li>Play games</li>
+                </ul>
+        	</td>
+
+        	<td colspan="2">
+                <form>
+                    Times you like to hold the birthday <br/>
+                    <input type="radio" name="time" value="morning"/> Morning 9:30-11:30 <br/>
+                    <input type="radio" name="time" value="noon"/> Noon 11:30--13:30<br/>
+                    <input type="radio" name="time" value="afternoon"/> Afternoon 13:30--15:30 <br/>
+                    <input type="radio" name="time" value="night"/> Night 19:30-21:30m
+                </form>
+            </td>
+
+        	<td colspan="5" style="font-family: verdana">
+               <div> <p> <strong> Come and Have a Nice Time! </strong>  </p> </div>
+            </td>
+        </tr>
+
+        	<tr>
+        		<td colspan="7"> </td>  <br />
+        	</tr>
+
+        	<tr>
+        		<td rowspan="2"> Customer's feedback
+
+                <i class="material-icons" style="font-size:36px;color:pink;">cake</i>
+
+
+                </td>
+
+        		<td colspan="7">
+                    <form>
+                       Name: <br/>
+                       <input type="text" name="name"> <br/>
+                       Experiences: <br/>
+                       <input type="text" name="experiences">  <br/>
+                       <input type="submit" value="submit">
+                    </form>
+        		</td>
+
+        		</td>
+
+        	</tr>
+
+        </table>
+
+    </body>
+
+</html>

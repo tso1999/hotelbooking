@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title> Elite Maple: About Us </title>
+		<style>
+
+	body {background-color: black ;}
+
+	.bar1{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  border: 3px solid black;
+	  background-color: #858483;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+	  background-color: #D97113;
+
+	}
+
+	.active {
+	  background-color:white;
+
+	}
+	.bar {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+
+
+	border-bottom-style: solid;
+	  overflow: hidden;
+	  background-color: #858483;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+	  background-color: #D97113;
+	}
+
+	.active {
+	  background-color:#858483;
+	}
+
+	#AEM {
+  background-color: #D4af37;
+   text-align: center;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 3px solid white;
+}
+
+#EML {
+  background-color: black;
+   text-align: center;
+  border: 3px solid white;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #WOHTO {
+  background-color: #D4af37;
+   text-align: center;
+  border: 3px solid white;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#EMO {
+  background-color: black;
+   text-align: center;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 3px solid white;
+}
+
+.float-child {
+    width: 47.6%;
+    float: left;
+    padding: 20px;
+
+
+}
+
+</style>
+
+
+	</head >
+
+	<body background-color="black">
+
+
+
+		<ul class="bar1">
+
+ <li><a href="About Us.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li style="float:right"><a href="sign.html">Sign Up/Log In</a></li>
+  <li style="float:right">Current Date</a></li>
+
+
+</ul>
+
+<ul class="bar">
+
+  <li><a class="active" href="homepage.html"><img src="logo.jpg" height="50" > </a></li>
+  <li style="float:right"><a href="book.html"> Book</a></li>
+  <li style="float: right"><a href="news events.hmtl">News</a></li>
+   <li style="float: right"><a href="Dine and drink.html">Dine/Drink</a></li>
+   <li style="float: right"><a href="Spa and Gym.html">Spa & Gym</a></li>
+	<li style="float: right"><a href="Rooms and suites.html">Room Gallery</a></li>
+  <li style="float: right"><a href="price.html">Room/Price</a></li>
+
+
+</ul>
+
+
+
+<div id="AEM">
+		<h1> About Elite Maple </h1>
+		<h3> Elite Maple ensures that every moment is filled with Perfection and Comfort. </h3>
+
+		<p> We take pleasure in creating experiences and memories here at Elite Maple and showing what Ottawa has to offer for our esteemed guests. Established in 1960, our hotel is proud to say we have been providing a luxurious hotel for over 50 years and take pride in our name. By choosing Elite Maple you are ensuring the utmost quality that you desrve. </p>
+
+		<br />
+	</div>
+
+	<div id="EML">
+		<h2> Elite Maple Luxuries </h2>
+
+			<ul>
+				<li> Relaxing Spa </li> <br />
+				<li> Gym </li><br />
+				<li> 5-Star International Cuisine </li><br />
+				<li> Bar and Lounge</li><br />
+				<li> Party Rooms </li><br />
+				<li> Turkish Bath </li><br />
+			</ul
+
+	</div>
+	<div id="WOHTO" >
+		<h2> What Ottawa Has to Offer </h2>
+
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/DtW0VqNkM9U"?>
+			</iframe>
+</div>
+
+<div id="EMO">
+		<h2> Elite Maple Offers </h2>
+
+			<img src="https://live.staticflickr.com/5027/5570292618_7b4fa238cb_c.jpg" alt="Winter Ottawa" height="300em">
+
+			<img src="https://p1.pxfuel.com/preview/675/326/544/canada-ottawa-parliament-hill-parliament.jpg" alt="Summer Ottawa" height="300em">
+
+			<p> Recieve up to 20% off depending on the seasons you wish to reserve in. </p>
+
+		<h2> Keep up to date on our discounts. </h2>
+
+		<form name="seasonform" onsubmit="appendNames()" method="post">
+			Season:
+			<br />
+			<select id="mySelect">
+				<option value="Summer" >Summer</option>
+				<option value="Winter">Winter</option>
+				<option value="Spring">Spring</option>
+				<option value="Fall">Fall</option>
+			</select>
+			<br />
+
+			First Name: <br /> <input type="text" name="name" />
+			<br />
+
+
+			Email Address: <br /> <input id="myInput" type="text" name="Email" />
+			<p id="capstext" style="display:none">Warning, caps lock is activated.</p>
+			<br />
+			<br />
+
+			<label for="myCheck">Agree with terms and condition:</label>
+
+			<input id="myCheck" type="checkbox" onclick="myFunction()">
+
+			<p id="text" style="display:none">You may now submit</p>
+			<br />
+
+			<input type="submit" value="Get Email Updates">
+		</form>
+
+			<br>
+</div>
+
+<script src="ScriptAU.js"></script>
+
+
+	</body>
+
+
+
+</html>

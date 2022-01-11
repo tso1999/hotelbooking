@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EliteMapleWebsite>
+	<Navbar>
+		<Homepage>
+			<Location> Ontario, Ottawa </Location>
+		</Homepage>
+		<SignUp>
+			<SignForm> Username Passowrd </SignForm>
+		</SignUp>
+		<Book> 
+			<BookForm>
+				<Info> CreditCard Details </Info>
+			</BookForm>
+		</Book>
+		<AboutUs>
+			<AboutEliteMaple> We take pleasure in creating experiences and memories here at Elite Maple and showing what Ottawa has to offer for our esteemed guests. Established in 1960, our hotel is proud to say we have been providing a luxurious hotel for over 50 years and take pride in our name. By choosing Elite Maple you are ensuring the utmost quality that you desrve. </AboutEliteMaple>
+			<Luxuries> List of Luxuries </luxuries>
+		</AboutUs>
+		<DineandDrink>
+			<SavoryMaple> Images and description </SavoryMaple>
+			<AllergyForm> Special Instructions </AllergyForm>
+		</DineandDrink>
+		<SpaGym>
+			<Spa>
+				<Reservation> Reserve a spot </Reservation>
+			</Spa>
+			<Gym> 
+				<Timing> 6-11 </Timing>
+			</Gym>
+		<RoomGallery>
+			<Images> Single, Suites, Luxury Suites </Images>
+		</RoomGallery>
+		<WeddingPlan>
+			<WeddingForm> Make Reservation </WeddingForm>
+		</WeddingPlan>
+		<BirthdayPlan>
+			<BirthdayForm> Make Reservation </BirthdayForm>
+		</BirthdayPlan>
+	<Navbar>
+</EliteMapleWebsite>
+				
+				

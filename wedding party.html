@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+   <title> Assignment 3: Wedding Party At Elite Maple Hotel </title>
+   <style>
+    body {
+  background-color: #D4af37;
+  }
+     .bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+  }
+
+li {
+  float: left;
+  }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+li a:hover:not(.active) {
+  background-color: orange;
+  }
+
+.active {
+  background-color:grey;
+  }
+    .heading {
+     color:black;
+     text-align:justify;
+    }
+    .heading::first-letter{
+  font-size:150%;
+    }
+    #title {
+    background: orange;
+    background:-webkit-linear-gradient(orange, yellow); /*Chrome, Safari*/
+    background: -o-linear-gradient(orange, yellow); /*Opera*/
+    background: -moz-linear-gradient(orange, yellow); /*Mozilla Firefox*/
+    background: linear-gradient (orange, yellow);
+    }
+
+     h1,h2{
+      font-family: "Times New Roman";
+    }
+    table, th, td {
+  border: 1px solid black;
+    }
+    div p {
+  background-color:orange;
+  }
+  div {
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: none;
+  overflow: auto;
+  }
+  div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+ }
+
+   </style>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ </head>
+
+  <body>
+
+    <ul class="bar">
+   <li><a class="active" href="homepage.html"><img src="logo.jpg" height="50" > </a></li>
+  <li style="float:right"><a href="book.html"> Book</a></li>
+  <li style="float: right"><a href="Dine and Drink.html">Dine/Drink</a></li>
+   <li style="float: right"><a href="price.html">Room Price</a></li>
+  <li style="float: right"><a href="homepage.html">Home</a></li>
+  </ul>
+
+    <h1 class="heading"> Welcome to Elite Maple Hotel! </h1>
+    <h2> - Have a nice memory during weddings!
+       <i class="material-icons" style="font-size:36px;color:pink;">favorite</i>
+
+    </h2>
+	 <table border="1" style="width:100%">
+
+        <tr>
+			<th colspan="6" id="title"> Wedding Party At Elite Maple Hotel </th>
+			<td colspan="1">
+                <form>
+                    Prefered types <br/>
+                    <select name="wedding types">
+                        <option value="traditional">Traditional</option>
+                        <option value="vintage style">Vintage style</option>
+                        <option value="elopement">Elopement </option>
+                        <option value="destination">Destination</option>
+                    </select>
+                </form>
+
+                <button type="button" onclick="alert('Thank you for the reservation')">
+                   Make a reservation
+                </button>
+
+            </td>
+
+        </tr>
+
+		<tr>
+			<td colspan="7"> <br /> </td>
+		</tr>
+
+		<tr>
+        	<td rowspan="2">
+                <video width="300" height="200" controls>
+                    <source src="wedding video.mp4" type="video/mp4">
+                    <source src="wedding video.ogg" type="video/ogg">
+                </video>
+            </td>
+        	<td colspan="7">
+
+              <p style="float:right;"> paragraph to introduce,paragraph to introduce</p>
+
+             <table>
+          <tr>
+                <th>Style of Wedding</th>
+                <th>Approximate price</th>
+          </tr>
+
+          <tr>
+                <td>Traditional</td>
+                <td>$250</td>
+          </tr>
+
+          <tr>
+                <td>Vintage</td>
+                <td>$300</td>
+          </tr>
+
+          <tr>
+
+                <td>Elopement</td>
+                <td>$300</td>
+
+          </tr>
+
+          <tr>
+               <td>Destination</td>
+               <td>$450</td>
+          </tr>
+
+         </table>
+
+        	</td>
+        <tr>
+        	<td colspan="2">
+                Official wedding ceremony structure (advice only) <br/>
+                <ol type="1">
+                    <li>Opening remarks</li> </br>
+                    <li>Charge to the couple</li> </br>
+                    <li>Exchanging of vows</li> </br>
+                    <li>Exchanging of rings</li> </br>
+                    <li>First kiss</li> </br>
+                    <li>The signing</li> </br>
+                    <li>Closing remarks</li> </br>
+                    <li>Recessional</li>
+                </ol>
+        	</td>
+        	<td colspan="2">
+                <form action="/action_page.php">
+                    Time you prefered (2-6 hours) <br/>
+                    Hours: <br/>
+                  <input type="number" id="hours" name="quantity" min="2" max="6">  <br/>
+                    Periods during the day: <br/>
+                  <input type="checkbox" name="time" value="morning" /> Morning <br/>
+                  <input type="checkbox" name="time" value="noon" /> Noon <br/>
+                  <input type="checkbox" name="time" value="afternoon" /> Afternoon <br/>
+                  <input type="checkbox" name="time" value="night" /> Night <br/>
+                  <input type="submit" value="Submit">
+                </form>
+            </td>
+
+            <td colspan="5" style="font-family: verdana">
+               <div> <p> <strong> Come and Enjoy! </strong> </p> </div>
+            </td>
+        </tr>
+
+        	<tr>
+        		<td colspan="7"> <br /> </td>
+        	</tr>
+
+        	<tr>
+
+        		<td rowspan="2"> Write down your experiences! </td>
+
+        		<td colspan="7">
+                    <form action="/action_page.php">
+                       <textarea name="message" rows="10" cols="30">
+                       <div class="fixed"> <div> Leave your feelings and suggestions! Leave your feelings and suggestions!Leave your feelings and suggestions!Leave your feelings and suggestions!Leave your feelings and suggestions!Leave your feelings and suggestions!Leave your feelings and suggestions!Leave your feelings and suggestions!Leave your feelings and suggestions!Leave your feelings and suggestions! </div> </div>
+                        </textarea>
+                        <input type="submit" value="Submit">
+
+
+                    </form>
+                </td>
+
+        	</tr>
+
+      </table>
+
+ </body>
+
+</html>

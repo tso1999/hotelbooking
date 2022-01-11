@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title> Elite Maple: Dine & Drink </title>
+<style>
+
+body {background-color: black ;}
+	.bar1{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  border: 3px solid black;
+	  background-color: #858483;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+	  background-color: #D97113;
+
+	}
+
+	.active {
+	  background-color:white;
+
+	}
+	.bar {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+
+
+	border-bottom-style: solid;
+	  overflow: hidden;
+	  background-color: #858483;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+	  background-color: #D97113;
+	}
+
+	.active {
+	  background-color:#858483;
+	}
+	#dsm {
+  background-color: #D4af37;
+   text-align: center;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 3px solid white;
+}
+#uam {
+  background-color: black;
+   text-align: center;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 3px solid white;
+ }
+ 	#sag {
+  background-color: #D4af37;
+   text-align: center;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 3px solid white;
+}
+
+ .float-childL {
+    width: 30%;
+    float: left;
+    padding: 20px;
+
+
+}
+	</style>
+	</head>
+
+	<body background-color="black">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="ScriptDD.js"> </script>
+
+
+		<ul class="bar1">
+
+ <li><a href="About Us.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li style="float:right"><a href="sign.html">Sign Up/Log In</a></li>
+  <li style="float:right"><a href="#current date">Current Date</a></li>
+
+
+</ul>
+
+<ul class="bar">
+
+  <li><a class="active" href="homepage.html"><img src="logo.jpg" height="50" > </a></li>
+  <li style="float:right"><a href="book.html"> Book</a></li>
+  <li style="float: right"><a href="news events.html">News</a></li>
+   <li style="float: right"><a href="Dine and drink.html">Dine/Drink</a></li>
+   <li style="float: right"><a href="Spa and Gym.html">Spa & Gym</a></li>
+	<li style="float: right"><a href="Rooms and suites.html">Room Gallery</a></li>
+  <li style="float: right"><a href="price.html">Room/Price</a></li>
+
+
+</ul>
+
+		<div id="dsm">
+
+		<h1> Dining at Savory Maple </h1>
+
+			<h3> At Elite Maple we provide our guests with the utmost quality of food at our very own restaurant Savory Maple. </h3>
+	</div>
+
+	<div id="uam">
+	<div class="float-childL">
+		<h2> Urban and modern </h2>
+
+			<p> Savory Maple brings urban food to a 5-star quality where even the most picky are satisfied </p>
+
+			<img src="https://i.pinimg.com/originals/3d/25/0e/3d250e15989d542ae3dad4cbd21170f7.jpg" width="500em">
+	</div>
+		<h2> Open Everyday of the Week </h2>
+<br /><br />
+			<p> 10:30am to 11pm </p>
+<br /><br />
+		<video controls loop autoplay muted width="500em">
+
+			<source src="steak.mp4" type="video/mp4">
+
+		</video>
+		<br />
+	</div>
+	<div id="sag">
+		<h2> Dine-in or Dine-out </h2>
+
+			<p> You can enjoy our food both in restaurant or in the comfort of your own room, where our room service can deliver it straight to you.</p>
+
+		<img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Poutine_at_Le_Champlain_in_Quebec_City.jpg" width="500em">
+		<br />
+</div>
+<div id="uam">
+		<h2> Delivery to your room </h2>
+			<form name="foodform" onsubmit="appendNames()" method="post">
+				Floor: <br /> <input type="Number" name="roomflr" />
+			<br />
+				Room Number: <br /> <input type="Number" name="roomnmbr" />
+			<br />
+
+				Allergies:
+			<br />
+				<input type="radio" name="allergies" <value="nut" />Nut Allergy<br />
+				<input type="radio" name="allergies" <value="Sfish" />Shellfish Allergy<br />
+
+				Special Instructionts:<br />
+				<textarea name="special" rows="3" cols="50"></textarea>
+
+				<br />
+
+				<input type="submit" value="Confirm">
+			</form>
+</div>
+	</body>
+	</html>
